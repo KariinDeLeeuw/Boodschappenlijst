@@ -11,12 +11,14 @@ function gaBoodschappenDoen(){
 function toonBoodschappen(){
   var htmlString = "";
   for (var x = 0; x < boodschappentas.length; x++) {
-    htmlString += boodschappentas[x] + '<input type="button" value="X" onclick="verwijderen()"> <br>';
+    htmlString += boodschappentas[x] + '<input type="button" value="X" onclick=verwijderen("+x+")> <br>';
   }
   var deLijst = document.getElementById("lijst");
   deLijst.innerHTML = htmlString;
 }
 
-function verwijderen(){
-  alert("verwijderen");
+function verwijderen(index){
+  boodschappentas.splice(index,1);
+  console.log(boodschappentas);
+  toonBoodschappen();
 }
