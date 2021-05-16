@@ -9,10 +9,11 @@ function gaBoodschappenDoen(){
 }
 
 function toonBoodschappen(){
-  var htmlString = "test";
-  for(var x = 0 ; x < boodschappentas.lenght ; x++ ){
-    htmlString += boodschappentas[x];
+  var htmlString = "";
+  for (var x = 0; x < boodschappentas.length; x++) {
+    htmlString += boodschappentas[x] + "<br>";
   }
+
   var deLijst = document.getElementById("lijst");
   deLijst.innerHTML = htmlString;
 }
