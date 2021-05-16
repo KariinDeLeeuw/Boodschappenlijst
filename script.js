@@ -1,4 +1,3 @@
-
 var boodschappentas = [];
 
 function gaBoodschappenDoen(){
