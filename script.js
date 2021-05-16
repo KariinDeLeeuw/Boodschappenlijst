@@ -17,8 +17,15 @@ function toonBoodschappen(){
   deLijst.innerHTML = htmlString;
 }
 
+// Een functie waarbij je een toegevoegde item weer kunt verwijderen
 function verwijderen(index){
   boodschappentas.splice(index,1);
-  console.log(boodschappentas);
   toonBoodschappen();
+}
+
+// Een functie waarbij je met enter de items kunt toevoegen, de keycode van enter is 13
+function voegtoe(e) {
+  if(e.keyCode == 13){
+    gaBoodschappenDoen();
+  }
 }
