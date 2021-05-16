@@ -30,3 +30,18 @@ body {
   box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.4);
   transform: scale(1.06);
 }
+
+#lijst {
+  padding: 20px;
+  margin: 40px;
+  border-color: black;
+  border-style: solid;
+  font-size: 26px;
+  text-align: left;
+}
+
+.item {
+  display: block;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}

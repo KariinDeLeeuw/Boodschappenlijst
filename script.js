@@ -10,7 +10,12 @@ function gaBoodschappenDoen(){
 function toonBoodschappen(){
   var htmlString = "";
   for (var x = 0; x < boodschappentas.length; x++) {
-    htmlString += boodschappentas[x] + '<input type="button" value="X" onclick=verwijderen("+x+")> <br>';
+    htmlString += `
+    <div class="item">
+   ${boodschappentas[x]}
+   <input class="delete-button"type="button" value='x' onclick="verwijderen(${x})">
+   </div>
+     `
   }
   var deLijst = document.getElementById("lijst");
   deLijst.innerHTML = htmlString;
